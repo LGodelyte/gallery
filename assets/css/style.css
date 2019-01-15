@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.main-header{
+	background-color: #155cc2;
+}
+
+.flex-container{
+	display: flex;
+}
+
+.capitals{
+	padding-bottom: 35px;
+	background-color: #e1e1e1;
+}
+
+.capitals .flex-container{
+	flex-wrap: wrap;
+}
+
+.capitals .capital{
+	width: calc(33% - 30px);
+	margin-left: 25px;
+	margin-top: 25px;
+	background-color: #ffffff;
+	box-shadow: 7px 7px 45px 0px rgba(0,0,0,0.35);
+}
+
+.capitals img {
+	width: 100%;
+}
+
+h1{
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 400;
+	color: #ffffff;
+	text-align: left;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	margin-left: 25px;
+	
+}
+
+h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.875rem;
+	font-weight: 400;
+	color: #000000;
+	line-height: 80%;
+	margin-bottom: 20px;
+	margin-left: 25px;
+	margin-top: 15px;
+}
+
+@media all and (min-width: 0px) and (max-width: 600px){
+	.capitals .capital{
+		width: calc(100% - 30px);
+	}
+}
+
+@media all and (min-width: 600px) and (max-width: 1000px){
+	.capitals .capital{
+		width: calc(50% - 30px);
+	}
+}
